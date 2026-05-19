@@ -1,0 +1,210 @@
+header {
+    background-color: #df974b; 
+    padding: 15px 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #01090b;
+    text-decoration: underline;
+}
+
+.hero {
+    height: 400px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1300&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.btn-primary {
+    background-color: white;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid white;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #e67e22;
+    color: white;
+    border-color: #e67e22;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #2d3436;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 2px solid #ddd;
+    transition: 0.3s;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn-secondary:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.05);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.titlu-pagina {
+    text-align: center;
+    color: #2d3436;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.grid-retete {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card-reteta {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    position: relative;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.card-reteta:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card-reteta img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #e67e22;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.card-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-info h3 {
+    margin: 0 0 10px 0;
+    color: #2d3436;
+}
+
+.card-info p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #636e72;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.btn-card {
+    display: block;
+    text-align: center;
+    background: #2d3436;
+    color: white;
+    padding: 12px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin-top: auto;
+}
+
+.btn-card:hover {
+    background: #e67e22;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .card-reteta {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+body.dark-mode .card-info h3 {
+    color: #e67e22;
+}
+
+body.dark-mode .card-info p {
+    color: #dfe6e9;
+}
+
+body.dark-mode .titlu-pagina {
+    color: #e67e22;
+}
+
+@media (max-width: 992px) {
+    .grid-retete {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-retete {
+        grid-template-columns: 1fr;
+    }
+}

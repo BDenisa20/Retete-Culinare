@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Rețete Tradiționale</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Acasă</a></li>
+                <li><a href="retete.html">Rețete</a></li>
+                <li><a href="alte-retete.html">Alte Rețete</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="titlu-pagina">Contactează-ne</h1>
+        <p class="subtitlu" style="text-align: center;">Ai o rețetă veche de la bunica? Trimite-ne un mesaj!</p>
+
+        <div style="max-width: 600px; margin: 0 auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);">
+            <form action="#">
+    <div style="margin-bottom: 15px;">
+        <label>Nume complet</label>
+        <input type="text" id="nume" required minlength="3" placeholder="Minim 3 litere..." style="width: 100%; padding: 10px;">
+    </div>
+    
+    <div style="margin-bottom: 15px;">
+        <label>Email</label>
+        <input type="email" id="email" required placeholder="exemplu@mail.com" style="width: 100%; padding: 10px;">
+    </div>
+
+    <div style="margin-bottom: 15px;">
+        <label>Mesaj</label>
+        <textarea id="mesaj" required minlength="10" placeholder="Minim 10 caractere..." style="width: 100%; padding: 10px;"></textarea>
+    </div>
+
+    <button type="submit" class="btn-card">Trimite Mesajul</button>
+</form>
+        </div>
+    </main>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

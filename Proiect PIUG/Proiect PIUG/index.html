@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retete Culinare - Acasa</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html" class="active">Acasă</a></li>
+                <li><a href="retete.html">Rețete</a></li>
+                <li><a href="alte-retete.html">Alte Rețete</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Gătește cu pasiune</h1>
+                <p>Descoperă rețete simple și gustoase pentru întreaga familie.</p>
+
+                <div class="hero-buttons">
+                    <a href="retete.html" class="btn-primary">Vezi Rețetele</a>
+                    <button id="btn-toggle-note" class="btn-secondary">📝 Notițele mele</button>
+                </div>
+
+                <!-- Secțiunea pentru notițe plasată corect, sub butoane -->
+                <div id="sectiune-notite" style="display: none; margin-top: 20px; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: left; color: #2d3436;">
+                    <h3 style="margin-bottom: 10px;">Carnet de Notițe Culinare</h3>
+                    <textarea id="input-notita" placeholder="Scrie o rețetă rapidă sau un ingredient de cumpărat..." style="width: 100%; height: 100px; padding: 10px; border-radius: 5px; border: 1px solid #ccc; font-family: inherit;"></textarea>
+                    <button id="btn-salveaza-notita" class="btn-primary" style="margin-top: 10px; cursor: pointer;">Salvează Notița</button>
+                    <div id="lista-notite" style="margin-top: 15px;"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container categorii">
+            <h2>Mâncăruri tradiționale din România</h2>
+
+            <div class="grid-categorii">
+                <div class="categorie-card">🏰 <span>Transilvania</span></div>
+                <div class="categorie-card">🥧 <span>Moldova</span></div>
+                <div class="categorie-card">🥣 <span>Banat</span></div>
+                <div class="categorie-card">🥘 <span>Oltenia</span></div>
+                <div class="categorie-card">🍲 <span>Maramureș</span></div>
+                <div class="categorie-card">🥗 <span>Ardeal</span></div>
+            </div>
+
+            <h2 style="margin-top: 40px;">Alte Categorii</h2>
+
+            <div class="grid-categorii">
+                <div class="categorie-card">🍝 <span>Paste</span></div>
+                <div class="categorie-card">🥗 <span>Salate</span></div>
+                <div class="categorie-card">🍰 <span>Deserturi</span></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
